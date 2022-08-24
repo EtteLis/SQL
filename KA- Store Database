@@ -1,0 +1,11 @@
+CREATE TABLE LiquorStore (id INTEGER PRIMARY KEY, itemname TEXT, stock INTEGER, price INTEGER);
+INSERT INTO LiquorStore VALUES(1, "Brandy", 15,12);
+INSERT INTO LiquorStore VALUES(2, "Vodka", 40,15);
+INSERT INTO LiquorStore VALUES(3, "Tequila", 25,20);
+INSERT INTO LiquorStore VALUES(4, "GIN", 15,15);
+INSERT INTO LiquorStore VALUES(5, "RUM", 25,12);
+INSERT INTO LiquorStore VALUES(6, "Whiskey", 30,25);
+SELECT*FROM LiquorStore;
+SELECT * FROM LiquorStore ORDER BY price desc; 
+SELECT itemname FROM LiquorStore
+order by stock desc;
